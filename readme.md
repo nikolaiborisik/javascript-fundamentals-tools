@@ -33,7 +33,7 @@ $ npm help init
 $ npm init
 ```
 
-Изучить полученный файл package.json и при необходимости отредактировать
+Изучить полученный файл package.json и, при необходимости, отредактировать
 
 Скопировать дирикторию /src и файлы index.html, index.babel.html и index.modules.html на github-е в ваш проект 
 
@@ -83,7 +83,7 @@ $ npm install --save-dev @babel/preset-env
 
 ```
 
-В scripts секцию файла package.json добавить команду build, которая весь js из /src скомпилирует использую babel в /build
+В scripts секцию файла package.json добавить команду build, которая весь js из /src скомпилирует используя babel в /build
 
 ```
 {
@@ -95,9 +95,9 @@ $ npm install --save-dev @babel/preset-env
  }
 ```
 
-Откройте файл index.babel.html, в нем подключен javascript файл из /build.
+Откройте файл index.babel.html. В нем подключен javascript файл из /build.
 
-Проверить работоспособность, открыв http://localhost:8080/index.babel.html и изучить полученный код в /build
+Проверить работоспособность, открыв http://localhost:8080/index.babel.html, и изучить полученный код в /build
 
 Подключить полифил
 
@@ -149,7 +149,7 @@ File: babel.rc
 
 Добавить js код использующий, предложенный синтаксис для optional-chaining.
 
-Для этого откройте файл src/single/index.js и и измените код следующим образом
+Для этого откройте файл src/single/index.js и измените код следующим образом
 
 ```js
 // document.getElementById('userInfoStreet').innerText = user.address && user.address.street || '';
@@ -185,7 +185,7 @@ FILE: .babelrc
 
 [Webpack](https://webpack.js.org/)
 
-Для изучения webpack будем использовать исходники из /src/modules и index.modules.html Изучите их
+Для изучения webpack будем использовать исходники из /src/modules и index.modules.html. Изучите их
 
 Установить webpack
 
@@ -209,13 +209,13 @@ module.exports = {
 };
 ```
 
-Собрать проект использую webpack и изучить исходники в /dist
+Собрать проект, используя webpack, и изучить исходники в /dist
 
 ```
 $ npx webpack
 ```
 
-Открыть http://localhost:8080/index.modules.html. Страница будет застилизована в следующих шагах
+Открыть http://localhost:8080/index.modules.html. Страница будет застилизована в следующих шагах.
 Подключить source map
 
 
@@ -230,7 +230,7 @@ module.exports = {
 
 Пересобрать проект
 
-Посмотреть исходники в chrome developer tools вкладка Sources
+Посмотреть исходники в chrome developer tools - вкладка Sources
 
 Изменить в webpack.config.js devtools на 'eval', пересобрать проект и просмотреть исходники в chrome dev tools
 
@@ -337,7 +337,7 @@ FILE .prettierrc
 $ npm run format
 ```
 
-Изменить настройки в файле .prettierrc и переформатировать исходники, проследить как будут изменяться полученный код
+Изменить настройки в файле .prettierrc и переформатировать исходники, проследить как будет изменяться полученный код
 
 ### Eslint
 
@@ -354,7 +354,7 @@ $ npm install eslint --save-dev
 
 
 
-При инициализации eslint-а выбирате следующие варианты
+При инициализации eslint-а выберите следующие варианты
 ```js
 ? How would you like to use ESLint? To check syntax and find problems
 ? What type of modules does your project use? JavaScript modules (import/export)
