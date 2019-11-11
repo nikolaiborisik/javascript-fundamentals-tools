@@ -1,0 +1,10 @@
+body{
+    font-size: 14px;
+}
+
+input {
+    height: 20px;
+    line-height: 20px;
+    padding: 0 5px;
+}
+

@@ -1,0 +1,8 @@
+.userInfo-row{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.userInfo-label{
+    width: 100px;
+}

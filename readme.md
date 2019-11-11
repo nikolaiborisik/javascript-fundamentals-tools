@@ -70,6 +70,7 @@ $ npm install --save-dev @babel/preset-env
 Создать в корне проекта файл `.babelrc` и включить preset [@babel/preset-env](https://babeljs.io/docs/en/babel-preset-env)
 
 ```
+{
  "presets": [
     [
       "@babel/preset-env",
@@ -79,7 +80,8 @@ $ npm install --save-dev @babel/preset-env
          }
       }
     ]
-  ],
+  ],      
+}
 
 ```
 
@@ -108,7 +110,7 @@ $ npm install --save babel-polyfill
 
 
 ```   
-File: babel.rc
+File: .babelrc
 
   [
       "@babel/preset-env",
@@ -121,6 +123,7 @@ File: babel.rc
 ```
 
 Пересобрать проект, изучить полученный код
+
 Изучить параметр target для пресета, проследить как при его изменении в файле `.babelrc` меняется сгенерированный код
 
 Примеры:
@@ -147,7 +150,7 @@ File: babel.rc
 
 ```
 
-Добавить js код использующий, предложенный синтаксис для optional-chaining.
+Добавить js код, использующий, предложенный синтаксис для optional-chaining.
 
 Для этого откройте файл src/single/index.js и измените код следующим образом
 
@@ -241,7 +244,7 @@ $ npm install -D babel-loader
 ```
 
 ```js
-FILE: webpack.config.js
+FILE: webpack.config.js  
 ....
 module: {
   rules: [
@@ -259,7 +262,7 @@ module: {
 
 ```
 
-Пересобрать проект и изучить код d /dist
+Пересобрать проект и изучить код в /dist
 
 ### Загрузка css
 
@@ -360,7 +363,7 @@ $ npm install eslint --save-dev
 ? What type of modules does your project use? JavaScript modules (import/export)
 ? Which framework does your project use? None of these
 ? Does your project use TypeScript? No
-? Where does your code run? (Press <space> to select, <a> to toggle all, <i> to invert selection)Browser
+? Where does your code run? Browser
 ? What format do you want your config file to be in? JSON
 
 ```
@@ -381,16 +384,16 @@ $ npx eslint src/**/*.js
 
 ### Git pre-commit hooks
 
-Используя [husky](https://github.com/typicode/husky) настроить git pre-commit hooks так что бы при каждом коммите измененные файлы форматировались и весь проект проходил проверку eslint-ом
+Используя [husky](https://github.com/typicode/husky) настроить git pre-commit hooks так, чтобы при каждом коммите измененные файлы форматировались и весь проект проходил проверку eslint-ом
 
 ```js
 $ npm i -D husky
-$ npm -i -D pretty-quick
+$ npm i -D pretty-quick
 ```
 
 ```js
 FILE: package.json
-
+...
  "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged && npm run lint"

@@ -1,4 +1,4 @@
-import "./index.css";
+// import "./index.css";
 import { initUserInfo } from "./userInfo.js";
 import { initUserForm } from "./userForm";
 

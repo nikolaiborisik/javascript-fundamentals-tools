@@ -1,0 +1,8 @@
+.userForm-item{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.userForm-label{
+    width: 100px;
+}

@@ -1,5 +1,5 @@
 import { userStore } from "./userStore";
-import "./userInfo.css";
+// import "./userInfo.css";
 
 const template = `
    <h2>User info</h2>
@@ -35,9 +35,9 @@ function updateUserInfo(user) {
   document.getElementById("userInfoAge").innerText = user.age;
   document.getElementById("userInfoCity").innerText =
     (user.address && user.address.city) || "";
-  // document.getElementById('userInfoStreet').innerText = user.address && user.address.street || '';
-  document.getElementById("userInfoStreet").innerText =
-    user.address?.street || "";
+  document.getElementById('userInfoStreet').innerText = user.address && user.address.street || '';
+  // document.getElementById("userInfoStreet").innerText =
+  //   user.address?.street || "";
 }
 
 let a = 1;

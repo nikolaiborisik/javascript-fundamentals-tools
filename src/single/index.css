@@ -1,0 +1,28 @@
+body{
+    font-size: 14px;
+}
+
+input{
+    height: 20px;
+    line-height: 20px;
+    padding: 0 5px;
+
+}
+
+.userInfo-row{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.userInfo-label{
+    width: 100px;
+}
+
+.userForm-item{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.userForm-label{
+    width: 100px;
+}

@@ -104,9 +104,9 @@ const initUserInfo = (function() {
     document.getElementById("userInfoAge").innerText = user.age;
     document.getElementById("userInfoCity").innerText =
       (user.address && user.address.city) || "";
-    // document.getElementById('userInfoStreet').innerText = user.address && user.address.street || '';
-    document.getElementById("userInfoStreet").innerText =
-      user.address?.street || "";
+    document.getElementById('userInfoStreet').innerText = user.address && user.address.street || '';
+    // document.getElementById("userInfoStreet").innerText =
+    //   user.address?.street || "";
   }
 
   return function initUserInfo(parent) {
